@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS and Layout Examples</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #007a78;
+            margin-top: 30px;
+        }
+
+        /* Lesson Headers Styling */
+        .lesson-header {
+            background-color: #007a78;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px;
+            font-size: 24px;
+        }
+
+        /* Lesson Content Boxes */
+        .lesson-box {
+            background-color: #ffffff;
+            border: 2px solid #007a78;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Box Styling for General Example */
+        .box {
+            width: 300px;
+            height: 150px;
+            margin: 10px auto;
+            padding: 20px;
+            border: 2px solid #007a78;
+            background-color: #fff;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        /* Lesson 1 & 2: CSS Basics, Stylesheets, Background Image */
+        .lesson-1-2 {
+            background: url('lb.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            padding: 50px 20px;
+        }
+
+        /* Lesson 3: CSS Syntax, Selectors */
+        .lesson-3-box {
+            width: 250px;
+            height: 150px;
+            padding: 20px;
+            border: 5px solid #007a78;
+            margin: 20px;
+            box-sizing: border-box;
+            background-color: white;
+        }
+
+        /* Lesson 4: Classes, Span, and Div Tag, Display Property */
+        .lesson-4-box {
+            width: 300px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #007a78;
+            color: white;
+            border-radius: 10px;
+            margin: 20px auto;
+        }
+
+        .lesson-4-box span {
+            display: inline-block;
+            padding: 10px;
+            background-color: #ff7f50;
+            color: white;
+            border-radius: 8px;
+        }
+
+        /* Lesson 5: Grouping Selectors, Pseudo-classes, Links */
+        .lesson-5-box {
+            text-align: center;
+        }
+
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: #005f55;
+            text-decoration: underline;
+        }
+
+        /* Lesson 6: Typography and CSS Styles */
+        .lesson-6-box {
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            color: #007a78;
+        }
+
+        /* Lesson 7: Box Model (Width, Padding, Border, Margin) */
+        .lesson-7-box {
+            width: 300px;
+            height: 200px;
+            padding: 30px;
+            margin: 30px auto;
+            border: 5px solid #007a78;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        /* Flexbox Layout */
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .flex-item {
+            width: 100px;
+            height: 100px;
+            background-color: #007a78;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+        }
+
+        /* Button Style */
+        .button {
+            display: inline-block;
+            background-color: #007a78;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .button:hover {
+            background-color: #005f55;
+        }
+
+        /* Go Back Button (Consistent Style) */
+        .go-back-button {
+            display: inline-block;
+            background-color: #007a78;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            margin: 30px auto;
+            transition: background-color 0.3s ease;
+        }
+
+        .go-back-button:hover {
+            background-color: #005f55;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Lesson 1 & 2: CSS Basics, Stylesheets, Background Image -->
+    <div class="lesson-1-2">
+        <h1>Lesson 1 & 2: CSS Basics & Stylesheets</h1>
+        <p>CSS allows you to apply styles to your HTML content, and it can be done through inline, embedded, or external stylesheets.</p>
+    </div>
+
+    <!-- Lesson 3: CSS Syntax, Selectors -->
+    <div class="lesson-box">
+        <h2 class="lesson-header">Lesson 3: CSS Syntax & Selectors</h2>
+        <div class="lesson-3-box">
+            <p>This box is styled with a class selector.</p>
+        </div>
+    </div>
+
+    <!-- Lesson 4: Classes, Span, and Div Tag, Display Property -->
+    <div class="lesson-box">
+        <h2 class="lesson-header">Lesson 4: Classes, Span, Div Tag, and Display Property</h2>
+        <div class="lesson-4-box">
+            <p>This is a <span>span inside a div</span> with display properties applied.</p>
+        </div>
+    </div>
+
+    <!-- Lesson 5: Grouping Selectors, Pseudo-classes, Links -->
+    <div class="lesson-box">
+        <h2 class="lesson-header">Lesson 5: Grouping Selectors & Pseudo-classes</h2>
+        <div class="lesson-5-box">
+            <p><a href="https://www.example.com" target="_blank">Click here to visit Example Site</a></p>
+        </div>
+    </div>
+
+    <!-- Lesson 6: Typography and CSS Styles -->
+    <div class="lesson-box">
+        <h2 class="lesson-header">Lesson 6: Typography and CSS Styles</h2>
+        <div class="lesson-6-box">
+            <p>Typography Example: Using font size, weight, and other styles!</p>
+        </div>
+    </div>
+
+    <!-- Lesson 7: Box Model (Width, Padding, Border, Margin) -->
+    <div class="lesson-box">
+        <h2 class="lesson-header">Lesson 7: Box Model</h2>
+        <div class="lesson-7-box">
+            <p>This box demonstrates the CSS box model with padding, borders, and margin.</p>
+        </div>
+    </div>
+
+    <!-- Flexbox Layout Example -->
+    <div class="lesson-box">
+        <h2 class="lesson-header">Flexbox Layout Example</h2>
+        <div class="flex-container">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+    </div>
+
+    <!-- Button Style Example -->
+    <div class="lesson-box">
+        <h2 class="lesson-header">Button Example</h2>
+        <a href="#" class="button">Click Me</a>
+    </div>
+
+    <!-- Go Back Button (Consistent Style) -->
+    <a href="PORTFOL1O.html" class="go-back-button">Go Back to Portfolio</a>
+
+</body>
+</html>

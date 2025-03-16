@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT 9 Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Comfortaa', sans-serif;
+            background: url('db.jpg') no-repeat center center/cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 280px;
+            background: #001f3f;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: -280px;
+            height: 100%;
+            overflow-y: auto;
+            padding: 20px;
+            transition: left 0.3s ease;
+            z-index: 1000;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin: 10px 0 20px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #a3b18a;
+            padding-bottom: 10px;
+        }
+
+        .sidebar h3 {
+            margin: 20px 0 10px;
+            font-size: 1.2rem;
+            color: #a3b18a;
+        }
+
+        .sidebar a {
+            display: block;
+            text-decoration: none;
+            font-size: 1rem;
+            color: white;
+            background: #007a78;
+            padding: 10px 15px;
+            margin: 5px 0;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .sidebar a:hover {
+            background: #a3b18a;
+            color: #001f3f;
+            transform: scale(1.05);
+        }
+
+        /* Show Sidebar on Hover */
+        .sidebar-container:hover .sidebar {
+            left: 0;
+        }
+
+        /* Main Content */
+        .content {
+            margin-left: 280px;
+            padding: 40px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .intro {
+            text-align: center;
+            background: url("scenery.jpg") no-repeat center center/cover;
+            padding: 80px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .intro h1 {
+            font-size: 2.5rem;
+            color: #d6dbd1;
+            margin-bottom: 20px;
+        }
+
+        .intro .description {
+            color: black;
+        }
+
+        .intro button {
+            padding: 15px 30px;
+            font-size: 1rem;
+            background: #001f3f;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .intro button:hover {
+            background: #a3b18a;
+            color: #001f3f;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar Container -->
+    <div class="sidebar-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>۶ৎ ICT 9 Portfolio ۶ৎ</h2>
+            <h3> ≽^• ˕ • ྀི≼ 1st Quarter</h3>
+            <a href="quarter-activities.html">Quarter Activities</a>
+            <a href="lessons-applied.html">Lessons Applied</a>
+            <a href="quizzes.html">Quizzes & Periodicals</a>
+            <a href="about-me.html">About Me</a>
+
+            <h3> ૮₍´˶• . • ⑅ ₎ა 2nd Quarter</h3>
+            <a href="videos-photos-audio.html">Videos, Photos, and Audio</a>
+            <a href="browser-outputs.html">Browser Outputs</a>
+            <a href="reflection.html">Reflection</a>
+
+            <h3> ૮₍˶ᵔ ᵕ ᵔ˶₎ა 4th Quarter</h3>
+         
+            <a href="q4_browser-outputs.html">Browser Outputs</a>
+            <a href="q4_reflection.html">Reflection</a>
+            <a href="q4_videos-photos-audio.html">Videos, Photos, and Audio</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="intro">
+            <h1>˗ˏˋ ★ ˎˊ˗ Welcome to My Portfolio!˗ˏˋ ★ ˎˊ˗</h1>
+            <p class="description">
+               <b> Helloo, I am Nicole Nel "Nicho" Dichoson from 9-Family! This is my ICT 9 Portfolio for the school year 24' - 25' !! 
+                Please Navigate to your left for the buttons and content of this portfolio. >ᴗ<♡ </b>               
+            </p>
+            <button onclick="document.querySelector('.intro').style.display='none';">Enter Portfolio</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4th Quarter - Media</title>
+    <style>
+        body {
+            font-family: 'Comfortaa', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #007a78;
+        }
+
+        .media-section {
+            margin-top: 20px;
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .media-grid img, .media-grid video, .media-grid audio {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-btn {
+            display: block;
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #007a78;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            margin: 20px auto;
+            width: 200px;
+        }
+
+        .back-btn:hover {
+            background-color: #005f55;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>4th Quarter - Media</h1>
+        <p>Here are my selected images, videos, and audio files for this quarter.</p>
+
+        <div class="media-section">
+            <h2>Images</h2>
+            <div class="media-grid">
+                <img src="mvp.jpg" alt="Image 1">
+                <img src="santi.jpg" alt="Image 2">
+                <img src="vpop.jpg" alt="Image 3">
+                <img src="pracno1.jpg" alt="Image 4">
+                <img src="yeah.jpg" alt="Image 5">
+            </div>
+        </div>
+
+        <div class="media-section">
+            <h2>Videos</h2>
+				<div class="media-grid">
+					<iframe src="https://drive.google.com/file/d/1SlvCF_n9jOtthrI9vqcVoTwizJbB4xs-/preview" width="200" height="200" allow="autoplay"></iframe>
+					<iframe src="https://drive.google.com/file/d/1vr-2InxeY9L93w105T3P2n-0Ua8-X7gs/preview" width="200" height="200" allow="autoplay"></iframe>
+					<iframe src="https://drive.google.com/file/d/1aH59DvcqDIi0Xm6d92018oCGZAwvtvVl/preview" width="200" height="200" allow="autoplay"></iframe>
+					<iframe src="https://drive.google.com/file/d/1SuJ-tEV4QxmAAspjfRLe4eMhLm9CdLHc/preview" width="200" height="200" allow="autoplay"></iframe>
+				</div>
+           
+        </div>
+
+        <a href="PORTFOL1O.html" class="back-btn">Back to Portfolio</a>
+    </div>
+</body>
+</html>

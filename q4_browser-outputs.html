@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Outputs - 4th Quarter</title>
+    <style>
+        body {
+            font-family: 'Comfortaa', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #007a78;
+        }
+        .section {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background: #e6f7f7;
+        }
+        .output-box {
+            padding: 10px;
+            background: #ffffff;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .back-btn {
+            display: block;
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #007a78;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            margin: 20px auto;
+            width: 200px;
+            text-align: center;
+        }
+        .back-btn:hover {
+            background-color: #005f55;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Browser Outputs - 4th Quarter</h1>
+
+        <div class="section">
+            <h2>Lesson 1: Events</h2>
+            <button onclick="alert('You clicked the button!')">Click Me</button>
+            <div class="output-box" onmouseover="this.style.background='yellow'" onmouseout="this.style.background='white'">
+                Hover over this box to change its color.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Lesson 2: Conditional Statements</h2>
+            <input type="number" id="grade" placeholder="Enter your grade">
+            <button onclick="checkGrade()">Check</button>
+            <p id="grade-result"></p>
+            <script>
+                function checkGrade() {
+                    var grade = document.getElementById('grade').value;
+                    if (grade >= 75) {
+                        document.getElementById('grade-result').innerText = "You Passed!";
+                    } else {
+                        document.getElementById('grade-result').innerText = "You Failed!";
+                    }
+                }
+            </script>
+        </div>
+
+        <div class="section">
+            <h2>Lesson 3: Functions</h2>
+            <button onclick="showMessage()">Click to See a Function</button>
+            <p id="function-output"></p>
+            <script>
+                function showMessage() {
+                    document.getElementById('function-output').innerText = "Hello! This is a function at work!";
+                }
+            </script>
+        </div>
+
+        <div class="section">
+            <h2>Lesson 4: Loops</h2>
+            <button onclick="showNumbers()">Show Numbers (1-5)</button>
+            <p id="loop-output"></p>
+            <script>
+                function showNumbers() {
+                    let output = "";
+                    for (let i = 1; i <= 5; i++) {
+                        output += i + " ";
+                    }
+                    document.getElementById('loop-output').innerText = output;
+                }
+            </script>
+        </div>
+
+        <a href="PORTFOL1O.html" class="back-btn">Back to Portfolio</a>
+    </div>
+</body>
+</html>
